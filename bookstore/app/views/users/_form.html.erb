@@ -1,0 +1,16 @@
+<%= simple_form_for(@user) do |f| %>
+
+#que me avise si hay error y lo imprima
+
+  <%= f.error_notification%>
+
+  
+  #el simple for lo que cambia el fiel por inputs
+  <div class="inputs">
+    <%= f.input :name %><br />
+    
+  </div>
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

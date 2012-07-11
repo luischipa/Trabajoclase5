@@ -1,0 +1,8 @@
+<h2> BIENVENIDO, <%=@user.name  %></h2>
+<%= simple_form_for(@user) do |f| %>
+
+	# crea la asocion con libros y conchechboox
+	<%=f.association :books, :as => "check_boxes" %> <br/>
+	<%=f.button :submit %>
+
+<% end %>
